@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 37.25, 49.875" name="TurnKeyBrokerSignUp">
+  <DataContextMoniker Name="/TurnKeyBrokerSignUpDataContext" />
+  <nestedChildShapes>
+    <classShape Id="46b8b4b7-c892-493f-a0d3-8c6877c89205" absoluteBounds="0.75, 13.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/Affiliate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f70f8307-773a-40b9-a4da-117607ab9f24" absoluteBounds="0.765, 14.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44795bbe-e814-48c5-ac64-5df3bd38299f" absoluteBounds="3.75, 13.75, 2, 20.616437174479167">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/TurnKeyBroker_Registration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="959bbc71-fbfb-4e43-847f-6a4015a3de2e" absoluteBounds="3.7650000000000006, 14.21, 1.9700000000000002, 20.056437174479164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db6a53b7-beb8-4692-92a5-60006617a52d" absoluteBounds="3.5, 1, 2, 3.1170068359375009">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/AgreementDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bee5c8ea-c484-47b8-a438-20772fa65dc6" absoluteBounds="3.5150000000000006, 1.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ef5e42e-249b-4056-a613-72e3d77c8835" absoluteBounds="8.75, 5.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_account_type_lu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71f3e081-0290-485f-9b5d-ee48a2de4168" absoluteBounds="8.765, 6.2100000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ba62148-d8a8-4c1d-b4d8-e8ddbeda6a4b" absoluteBounds="11.75, 1.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_address_type_lu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c9a4349-c68c-4122-8383-8df4f53cf444" absoluteBounds="11.765, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3edc9b79-f8d9-4b93-9313-8abbb2d8fbbe" absoluteBounds="6.75, 16.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_AdminUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1fd53c2c-5fad-4203-a9be-de9d33fa33b8" absoluteBounds="6.7650000000000006, 17.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="763c7683-0b17-4fde-bfd0-cc123fd6a296" absoluteBounds="17.75, 6.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_affiliation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ea50928-b066-4957-9d02-f8509730b11e" absoluteBounds="17.765, 7.2100000000000009, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f94b90e3-4ae7-4411-b838-9e96cd5dd232" absoluteBounds="17.75, 11.75, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_communication_choice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19067598-9d20-4cd1-b4a3-8e16f4a0dd24" absoluteBounds="17.765, 12.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08bd790e-b8c1-41a2-bfd7-04d4357d0417" absoluteBounds="14.5, 9.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_employment_status_lu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6710338-45fb-47ed-a76f-c1791904ab65" absoluteBounds="14.515, 10.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34fed7f4-1cee-4d5a-802b-a593c66a6f49" absoluteBounds="17.75, 15.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_financial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcf54854-f460-478d-8d53-c64e695dacf0" absoluteBounds="17.765, 16.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d25e19a-eb78-44d6-9b64-012faec64999" absoluteBounds="19.75, 0.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_goal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58703d94-4ff4-4bba-a455-b5c40fed6139" absoluteBounds="19.765, 1.2100000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04664dc7-5ea5-438b-99bb-296b54201133" absoluteBounds="11.75, 15, 2, 1.1939925130208362">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_identification_type_lu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d59b2740-4576-49a3-a8a6-8f237e2c4851" absoluteBounds="11.765, 15.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af8f09d6-2c82-4bc3-a5da-b97627488bb8" absoluteBounds="19.75, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_initial_lu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6bf99c60-713f-4ac1-895e-bccdcd4c4b1c" absoluteBounds="19.765, 5.2100000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97b73c4e-13b6-495a-a877-73807013d9af" absoluteBounds="6.75, 19.75, 2, 5.6169254557291666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_managing_cash" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64ce946b-6d09-4b14-8cb4-5cc4ca695dac" absoluteBounds="6.7650000000000006, 20.21, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5af01c79-484f-4f71-af47-282de5f5b8b9" absoluteBounds="17.75, 19.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_margin_account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35688ef1-fa9b-499c-838d-01c21dd96019" absoluteBounds="17.765, 20.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f91e0aa-7c4d-4e75-8d0c-d2cd71c77685" absoluteBounds="11.75, 3.625, 2, 1.193992513020834">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_martial_status_lu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="956104c7-25b7-4e77-9299-e46681846180" absoluteBounds="11.765, 4.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0d607cd-b843-43be-b189-909b6e171b03" absoluteBounds="14.5, 13.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_patriot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="238b4401-cf93-4e51-a4ae-d5ccff9fba38" absoluteBounds="14.515, 13.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ddc682b-45b7-4608-a8fd-aec8efb377d9" absoluteBounds="20.75, 6.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_risk_tolerance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8504e1f5-ce3b-4be1-a164-5bd8a7d06e71" absoluteBounds="20.765, 7.2100000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd71025b-472d-4c98-9235-a329a7957f1b" absoluteBounds="14.5, 17.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_security_information" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa3658f7-2b86-48c6-a6d6-8a46eec3be4b" absoluteBounds="14.515, 17.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a99a2dc-c537-48c2-9d61-20b3e04ac6fe" absoluteBounds="20.75, 9.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_state" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62dec095-7e52-4dd4-bb64-d4ecca410245" absoluteBounds="20.765, 10.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0dac271a-c2ca-4a17-b4df-f09de4e0aba1" absoluteBounds="9.75, 20.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_suffix_lu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32587896-142a-4d98-9b05-2e35e108a041" absoluteBounds="9.765, 21.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.75 : 15.4912019856771); (14.2291666666667 : 15.4912019856771 : JumpStart); (14.3958333333333 : 15.4912019856771 : JumpEnd); (14.5 : 15.4912019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_identification_type_lu/tb_identification_type_lu_tb_patriot" />
+      <nodes>
+        <classShapeMoniker Id="04664dc7-5ea5-438b-99bb-296b54201133" />
+        <classShapeMoniker Id="f0d607cd-b843-43be-b189-909b6e171b03" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 16.1939925130208); (14.125 : 16.5689925130208); (14.125 : 19.0296541341146); (14.5 : 19.0296541341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_identification_type_lu/tb_identification_type_lu_tb_security_information" />
+      <nodes>
+        <classShapeMoniker Id="04664dc7-5ea5-438b-99bb-296b54201133" />
+        <classShapeMoniker Id="fd71025b-472d-4c98-9235-a329a7957f1b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0537d6e5-6709-4850-92f6-d3c159f5212a" absoluteBounds="6.25, 1.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/UserAgrement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4602c57d-d7f0-47f6-bd58-751361a24145" absoluteBounds="6.2650000000000006, 1.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 3.31655110677083); (6.25 : 3.31655110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/AgreementDetail/AgreementDetail_UserAgrement" />
+      <nodes>
+        <classShapeMoniker Id="db6a53b7-beb8-4692-92a5-60006617a52d" />
+        <classShapeMoniker Id="0537d6e5-6709-4850-92f6-d3c159f5212a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="30947884-a84b-47e7-af45-7b5d59dcb8a0" absoluteBounds="20.75, 12.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_setting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5092ebd3-bf75-4c10-b673-340b081f28de" absoluteBounds="20.765, 13.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9cb1f3b4-d5e3-4ced-85b6-e3a0b9dbcd6a" absoluteBounds="0.75, 1.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/Agreement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="806e3ffa-9b3e-486c-b6dc-f959ba22bd34" absoluteBounds="0.76500000000000057, 1.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.67390055338542); (3.5 : 2.67390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/Agreement/Agreement_AgreementDetail" />
+      <nodes>
+        <classShapeMoniker Id="9cb1f3b4-d5e3-4ced-85b6-e3a0b9dbcd6a" />
+        <classShapeMoniker Id="db6a53b7-beb8-4692-92a5-60006617a52d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.05569827669271); (3.25 : 2.05569827669271); (3.25 : 0.75); (7.25 : 0.75); (7.25 : 1.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/Agreement/Agreement_UserAgrement" />
+      <nodes>
+        <classShapeMoniker Id="9cb1f3b4-d5e3-4ced-85b6-e3a0b9dbcd6a" />
+        <classShapeMoniker Id="0537d6e5-6709-4850-92f6-d3c159f5212a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="613eaa6b-6baa-42ac-ada5-017f8422c71a" absoluteBounds="20.75, 15.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_ContentManagement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcc938a2-7763-4d49-bb8a-4860846ff68d" absoluteBounds="20.765, 16.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d32a996-bb0f-4f8c-8600-e6fede3d13d2" absoluteBounds="20.75, 18.75, 2, 4.6554182942708309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/store_base" />
+      <nestedChildShapes>
+        <elementListCompartment Id="232a30cf-d473-4ccb-8e57-03d9a746f8ae" absoluteBounds="20.765, 19.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34acdf7f-8633-4543-a25e-ef6b4d361e09" absoluteBounds="0.75, 8.375, 2, 1.5785953776041737">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a78d473a-a617-4eac-ba62-948cd79416ba" absoluteBounds="0.765, 8.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d855d609-145f-4ea1-807a-1ac144fc3eae" absoluteBounds="12.75, 21.75, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_WebEvent_Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a61bcae-dc7d-497f-be87-e38a7374ef9a" absoluteBounds="12.765, 22.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04f20189-e066-49fd-a7da-1ae755063810" absoluteBounds="9.25, 11.125, 2, 4.8477197265625023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39cdb3f5-0dfb-480e-8b8d-7df00a56eb1a" absoluteBounds="9.265, 11.585, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d559f884-5208-484f-84d2-62d1d69377a2" absoluteBounds="3.5, 5.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Path" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4a14dc9-6b3f-4daa-bc08-7a4117b135ed" absoluteBounds="3.515, 5.9600000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b73e2645-872c-487a-a5ee-8c34019f549b" absoluteBounds="6.25, 5.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_PersonalizationAllUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74379551-7871-4e9c-bd29-d2aa759a3192" absoluteBounds="6.265, 6.0850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9591519d-b378-4f7e-a321-e244cd2a13c9" absoluteBounds="9.25, 8.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_PersonalizationPerUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f41adad-544a-40a1-b387-876b232f3c38" absoluteBounds="9.265, 8.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="117780e1-5355-469b-a6cc-2deb178504a3" absoluteBounds="6.25, 10.625, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0251ad83-4843-4245-9f87-437a10d5dfe7" absoluteBounds="6.265, 11.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9604f3e-574e-4228-9717-67d88cf4a44b" absoluteBounds="3.5, 7.875, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2d1cdd4-744f-47f5-8d32-7664ffe2df2c" absoluteBounds="3.515, 8.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46a42e79-8e88-4fe5-b700-85635af5e65e" absoluteBounds="22.75, 0.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_SchemaVersion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="207c4cd2-cdb3-4cc5-9f0b-56cc29a341fa" absoluteBounds="22.765, 1.2100000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6169a944-69fa-4ef9-b401-bba30fdf312d" absoluteBounds="3.5, 10.375, 2, 2.3478011067708451">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60b6a9af-9d9e-4397-a242-50b8833fc98e" absoluteBounds="3.515, 10.835, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="add2f0b3-0521-4b0a-be2d-fd0f1e9e1736" absoluteBounds="6.25, 8.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_UsersInRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c394c77d-5614-46c5-b604-e863dd8fd916" absoluteBounds="6.265, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 9.16429768880209); (3.25 : 9.16429768880209); (3.25 : 10.1939925130208); (10.49999975 : 10.1939925130208); (10.49999975 : 11.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Application/aspnet_Application_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="34acdf7f-8633-4543-a25e-ef6b4d361e09" />
+        <classShapeMoniker Id="04f20189-e066-49fd-a7da-1ae755063810" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.78125 : 8.375); (0.78125 : 6.67714680989583); (3.5 : 6.67714680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Application/aspnet_Application_aspnet_Path" />
+      <nodes>
+        <classShapeMoniker Id="34acdf7f-8633-4543-a25e-ef6b4d361e09" />
+        <classShapeMoniker Id="d559f884-5208-484f-84d2-62d1d69377a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.31814697265625); (6.25 : 6.31814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Path/aspnet_Path_aspnet_PersonalizationAllUser" />
+      <nodes>
+        <classShapeMoniker Id="d559f884-5208-484f-84d2-62d1d69377a2" />
+        <classShapeMoniker Id="b73e2645-872c-487a-a5ee-8c34019f549b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.07859537760417); (5.875 : 7.45359537760417); (5.875 : 7.875); (8.875 : 7.875); (9.25 : 8.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Path/aspnet_Path_aspnet_PersonalizationPerUser" />
+      <nodes>
+        <classShapeMoniker Id="d559f884-5208-484f-84d2-62d1d69377a2" />
+        <classShapeMoniker Id="9591519d-b378-4f7e-a321-e244cd2a13c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.70714884440105); (3.5 : 8.70714884440105)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Application/aspnet_Application_aspnet_Role" />
+      <nodes>
+        <classShapeMoniker Id="34acdf7f-8633-4543-a25e-ef6b4d361e09" />
+        <classShapeMoniker Id="f9604f3e-574e-4228-9717-67d88cf4a44b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.5905989583333); (9.25 : 12.5905989583333)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_User/aspnet_User_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="6169a944-69fa-4ef9-b401-bba30fdf312d" />
+        <classShapeMoniker Id="04f20189-e066-49fd-a7da-1ae755063810" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.4515474791667); (6 : 11.4515474791667); (6 : 10.375); (9.7500005 : 10.375); (9.7500005 : 10.0208968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_User/aspnet_User_aspnet_PersonalizationPerUser" />
+      <nodes>
+        <classShapeMoniker Id="6169a944-69fa-4ef9-b401-bba30fdf312d" />
+        <classShapeMoniker Id="9591519d-b378-4f7e-a321-e244cd2a13c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.9862221445312); (6.25 : 11.9862221445312)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_User/aspnet_User_aspnet_Profile" />
+      <nodes>
+        <classShapeMoniker Id="6169a944-69fa-4ef9-b401-bba30fdf312d" />
+        <classShapeMoniker Id="117780e1-5355-469b-a6cc-2deb178504a3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9.95359537760417); (1.75 : 11.5489005533854); (3.5 : 11.5489005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Application/aspnet_Application_aspnet_User" />
+      <nodes>
+        <classShapeMoniker Id="34acdf7f-8633-4543-a25e-ef6b4d361e09" />
+        <classShapeMoniker Id="6169a944-69fa-4ef9-b401-bba30fdf312d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.19794840494792); (6.25 : 9.19794840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_Role/aspnet_Role_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="f9604f3e-574e-4228-9717-67d88cf4a44b" />
+        <classShapeMoniker Id="add2f0b3-0521-4b0a-be2d-fd0f1e9e1736" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.375); (5.875 : 10); (5.875 : 10.3189925130208); (6.25 : 9.94399251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/aspnet_User/aspnet_User_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="6169a944-69fa-4ef9-b401-bba30fdf312d" />
+        <classShapeMoniker Id="add2f0b3-0521-4b0a-be2d-fd0f1e9e1736" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d59fa7b4-b3e8-4532-b55c-70ed5e523658" absoluteBounds="15.75, 22.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/EmailLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="756a8c3d-1b21-4094-89bb-99c53d0b9e86" absoluteBounds="15.765, 23.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90e23ec5-ceb3-4e39-a276-e0b68cd339ec" absoluteBounds="22.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/site_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d53afc56-b742-4a5a-a648-e82b8e9231cf" absoluteBounds="22.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1238d89a-dc7a-499b-b8f2-cd3c1b65d8ef" absoluteBounds="23.75, 6.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/newsletter_subscriber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5b7b61e-1f88-4a17-b089-c513222a2a8f" absoluteBounds="23.765, 7.2100000000000009, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f5c98d9-9025-4e6c-a556-4b2c133871ed" absoluteBounds="23.75, 10.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/demo_request" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15acb739-e7e9-4c32-a071-a94a3527ebb8" absoluteBounds="23.765, 11.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="194e9e2f-88ab-4c7e-8936-d4e0f38056c5" absoluteBounds="23.75, 16.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_account_bankreference" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09b2431a-7988-4db0-ab30-3a012e90a2f8" absoluteBounds="23.765, 17.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="208df215-097b-4002-8afc-ffcbc7208646" absoluteBounds="23.75, 19.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_netellertransaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c72cf934-83b4-4f44-a384-95b910ff13ed" absoluteBounds="23.765, 20.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbadf628-3343-418b-a0bf-5b50316246be" absoluteBounds="18.75, 24.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_neteller_fee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75e4a7d5-86e3-4d15-a9a8-8689d2df8e80" absoluteBounds="18.765, 25.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00c1d7c3-ba41-457e-b3f6-f2060970b25b" absoluteBounds="21.75, 24.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_BlogVisitor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02161709-fcf0-4fc2-9e44-17ff02dc4f55" absoluteBounds="21.765, 25.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f467bdbc-f76f-4cbc-b0c6-581fdf5939f6" absoluteBounds="24.75, 24.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_blog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed5c20b8-678e-4a55-b467-57f437057cc8" absoluteBounds="24.765, 25.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5db4fb7c-7c85-4bc6-bf64-0182bfbf6552" absoluteBounds="26.75, 0.75, 2, 6.7707340494791666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_financial_investment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8020836-aac2-4bae-a500-a0755f58e3cb" absoluteBounds="26.765, 1.2100000000000009, 1.9700000000000002, 6.2107340494791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7114058-727f-4b14-a96b-cede13cd7340" absoluteBounds="14.5, 1.125, 2, 6.1938297526041666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a67f41e8-ac98-44ac-9fdb-7b4aac078aeb" absoluteBounds="14.515, 1.585, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.75 : 2.22199625651042); (14.5 : 2.22199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_address_type_lu/tb_address_type_lu_tb_address" />
+      <nodes>
+        <classShapeMoniker Id="7ba62148-d8a8-4c1d-b4d8-e8ddbeda6a4b" />
+        <classShapeMoniker Id="f7114058-727f-4b14-a96b-cede13cd7340" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 4.22199625651042); (14.5 : 4.22199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_martial_status_lu/tb_martial_status_lu_tb_address" />
+      <nodes>
+        <classShapeMoniker Id="1f91e0aa-7c4d-4e75-8d0c-d2cd71c77685" />
+        <classShapeMoniker Id="f7114058-727f-4b14-a96b-cede13cd7340" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d1b6ff35-ec0d-4371-933a-871cee416c29" absoluteBounds="6.75, 26.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_blogmeta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f863ade8-2560-47d3-a1d0-0fe85be0cef8" absoluteBounds="6.7650000000000006, 27.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08be0632-f3c1-4dae-a742-99be23def82a" absoluteBounds="26.75, 8.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_institutional_signup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1cab4dbd-075f-4c8e-92c3-47ce9f8e3647" absoluteBounds="26.765, 9.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8deac952-7720-4285-8327-63b0e712f0b1" absoluteBounds="11.75, 17.625, 2, 1.9631982421874952">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cfd0dcf-374b-46a5-83a4-b727ced20e76" absoluteBounds="11.765, 18.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.75 : 17.6884254047476); (14.0660744349011 : 17.3723509698465 : JumpStart); (14.1839255650989 : 17.2544998396487 : JumpEnd); (14.3125 : 17.1259254047476); (14.3125 : 14.3393489928385); (14.5 : 14.3393489928385)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_country/tb_country_tb_patriot" />
+      <nodes>
+        <classShapeMoniker Id="8deac952-7720-4285-8327-63b0e712f0b1" />
+        <classShapeMoniker Id="f0d607cd-b843-43be-b189-909b6e171b03" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="66c25e8a-7a9e-46c1-bcfa-6a1e4b2db1ba" absoluteBounds="9.75, 26.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_bank_ProfessionalLink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b29a76af-db81-4cd7-9aa8-b52c0436009e" absoluteBounds="9.765, 27.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="16f1526f-305f-4616-bc54-ed1b2ca2ffc7" absoluteBounds="26.75, 12.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/account_signature" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1692906-572a-4831-83f2-9950b4c10427" absoluteBounds="26.765, 13.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ac134e9-d72c-4761-a4ad-ff873b536219" absoluteBounds="26.75, 21.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_affiliateuser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="047fb99d-0410-429f-aeb1-b4577d7c065e" absoluteBounds="26.765, 22.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6317adb7-32a9-438d-aa4c-9a50ae54e0b2" absoluteBounds="18.75, 27.75, 2, 5.4246240234375023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/website_request_log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19541db2-4ecd-4765-915d-76ed7181af5c" absoluteBounds="18.765, 28.21, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2586698-1cbf-4774-a0d9-485a214e0377" absoluteBounds="27.75, 24.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/emailTemplate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79158ee7-39d3-44ba-9d58-a0e47dc6cd01" absoluteBounds="27.765, 25.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab648e58-da17-4894-9011-28a95ed263b3" absoluteBounds="21.75, 28.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_PostType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e918b129-fea2-4642-962a-ce69738480d8" absoluteBounds="21.765, 29.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e297fa6e-81e8-4122-b9d7-3c112dbe1236" absoluteBounds="29.75, 12.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_RestrictDomainList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a1ce763-864b-492a-bb88-c77f7befa526" absoluteBounds="29.765, 13.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f130e6ee-8c55-44f3-af1c-f438d20b3a95" absoluteBounds="29.75, 14.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_ExchangeType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="70135329-d475-43fd-b30d-08a760712530" absoluteBounds="29.765, 15.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="929f80f7-a6e5-4134-a4f6-b52b79cc8fa7" absoluteBounds="24.75, 29.75, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_ProNonProAgreement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b0bee87-f533-4d80-acdd-ddc65888e4e3" absoluteBounds="24.765, 30.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="192cdcae-dc64-49e4-9f72-b713c558874f" absoluteBounds="29.75, 16.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_AddOn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fb8f2fe-901a-43c3-8d89-5c6d2327db0d" absoluteBounds="29.765, 17.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b2618a2-326d-4daa-932f-cee286af4945" absoluteBounds="17.5, 3.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_employementstatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6910ceed-c25e-40ef-909a-ba297daf50fa" absoluteBounds="17.515, 3.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.5 : 4.61620198567708); (17.5 : 4.61620198567708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_address/tb_address_tb_employementstatus" />
+      <nodes>
+        <classShapeMoniker Id="f7114058-727f-4b14-a96b-cede13cd7340" />
+        <classShapeMoniker Id="7b2618a2-326d-4daa-932f-cee286af4945" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.5 : 10.5665511067708); (17.59375 : 10.5665511067708); (17.59375 : 5.98240397135417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_employment_status_lu/tb_employment_status_lu_tb_employementstatus" />
+      <nodes>
+        <classShapeMoniker Id="08bd790e-b8c1-41a2-bfd7-04d4357d0417" />
+        <classShapeMoniker Id="7b2618a2-326d-4daa-932f-cee286af4945" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9f038eb7-6b48-49dd-a092-15d6c0598926" absoluteBounds="24.125, 14.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_funding" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c80d8bcb-9430-440c-8869-47c4ab845f31" absoluteBounds="24.14, 14.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13f1f708-b98e-438f-b14e-4cb4c7edb65b" absoluteBounds="35, 4.5, 2, 7.7322412109375005">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_HomeGraphic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36f832b4-4782-431a-a782-0c04ae7836a5" absoluteBounds="35.015, 4.96, 1.9700000000000002, 7.1722412109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1498adfc-c17e-4acc-a309-70c85d165afb" absoluteBounds="9, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_Compliance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="747308ff-6efd-46a0-b9a0-ec7e7a0baf67" absoluteBounds="9.015, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f33d4ae-52e2-4e0b-b67b-1246d119f874" absoluteBounds="12.75, 26.375, 2, 6.1938297526041657">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/FundRequest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5a73c3d-d7a4-485c-8a58-06ef93d92235" absoluteBounds="12.765, 26.835, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="63004fce-e280-41c3-b70f-3cf612b7e8fe" absoluteBounds="6.25, 4.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_EasyOFACHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88f12279-e0dc-4f5f-9811-6981922fc122" absoluteBounds="6.265, 4.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b1d03c8d-b744-43d1-81c9-c8243875f639" absoluteBounds="30.75, 1.875, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_PostNew" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe4276a4-8ff3-4557-9f06-55bd5e9ff254" absoluteBounds="30.765, 2.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db20743a-eaf1-458d-8bf3-b28f6bbc39ee" absoluteBounds="5.75, 36.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_AffiliateType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5c43663-5114-497b-ba48-d8611a74b059" absoluteBounds="5.765, 36.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38c58574-9cad-4450-8afe-fc493be3e7e0" absoluteBounds="6, 46.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_ClientAddonHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d2c108c-e374-4971-aff5-3c27d46d8956" absoluteBounds="6.015, 46.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19675bfa-b8b0-4903-954a-d2b30e328b6a" absoluteBounds="7.5, 43.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_ProratingFee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ab62be9-c676-4aee-a897-b1b8f729e8b6" absoluteBounds="7.515, 43.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93b11f9c-4704-4de6-b268-0616505ed095" absoluteBounds="21.5, 27.875, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="314d4bb2-2ead-473d-84d8-331cea30acc6" absoluteBounds="21.515, 28.335, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46fc5b40-919c-4d12-b1b6-1bd1f59c7591" absoluteBounds="4.625, 43.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_PlateformAccount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ac4b639-af43-4f45-b0c8-9e66ffce23bf" absoluteBounds="4.64, 43.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ed789f8-7f5d-4eea-8a05-b0afbf79d196" absoluteBounds="26.25, 19, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_sharedresponse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="119c5508-c850-4b2b-94f7-c485828f0a3a" absoluteBounds="26.265, 19.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30c81499-2ac4-45c7-a1ce-9a97cfe7ed35" absoluteBounds="8.875, 3.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_payamount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b203daff-3136-483e-9d32-6b64a098ac41" absoluteBounds="8.89, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0563f66f-4e4d-4b53-b51c-192733ec7077" absoluteBounds="0.875, 4.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TurnKeyBrokerSignUpDataContext/tb_savetoken" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2bc1a338-4757-4329-a7d6-2c549d2cd453" absoluteBounds="0.89000000000000057, 4.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

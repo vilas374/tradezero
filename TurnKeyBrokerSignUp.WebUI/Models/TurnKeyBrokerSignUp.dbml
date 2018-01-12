@@ -1,0 +1,1224 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tradezero" Class="TurnKeyBrokerSignUpDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=108.168.203.227,7008;Initial Catalog=tradezero;Persist Security Info=True;User ID=tradezero;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TurnKeyBroker2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Affiliates" Member="Affiliates">
+    <Type Name="Affiliate">
+      <Column Name="AffiliateId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VendorId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CPC" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Clicks" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CPA" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Acquisitions" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TurnKeyBroker_Registration" Member="TurnKeyBroker_Registrations">
+    <Type Name="TurnKeyBroker_Registration">
+      <Column Name="registration_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ModuleID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="application_type" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="is_new" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="is_change" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="branch" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="account_acronym" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="account_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="tax_id" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="citizenship" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="residentof" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="initial_transaction" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="account_type" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="discretionary_authority" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="discretionary_authority_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="date_of_birth" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="martial_status" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="dependents" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="account_acquired_source" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="referral_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="customer_known_length" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="is_customer_principal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="is_customer_investment_manager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="customer_first_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="customer_last_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="customer_address1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="customer_address2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="customer_city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="customer_state" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="customer_zip" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="is_interestedparty_principal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="is_interestedparty_investment_manager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="interestedparty_first_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="interestedparty_last_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="interestedparty_address1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="interestedparty_address2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="interestedparty_city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="interestedparty_state" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="interestedparty_zip" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="interestedparty_phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="interestedparty_fax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="interestedparty_email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="special_instructions" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="type_of_firm" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="type_of_clearing" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="delivery_instructions_mode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="delivery_instructions" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="is_delivery_recieve_instruction_different" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="bank_reference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="dtc_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="institution_id" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="other_reference" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="agent_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="customer_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="investment_objective" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="institutional_account_1_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="institutional_account_1_phone" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="institional_account_1_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="institional_account_1_accountno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="institutional_account_2_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="institutional_account_2_phone" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="institional_account_2_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="institional_account_2_accountno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="account_income" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="net_worth" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="net_liquid_assets" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="fed_tax_bracket" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="individual_account_employer" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="individual_account_typeofbusiness" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="individual_account_occupation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="individual_account_address" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="individual_account_position" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="individual_account_phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="commission_profile_listed" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="commission_profile_billable" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="commission_profile_option" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="commission_profile_otc" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="commission_profile_cmta" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="commission_profile_ecn" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="commission_profile_other" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="commission_profile_passthru" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="investment_advisor_managed_by" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="investment_advisor_introduced_by" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="home_address1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="home_address2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="home_city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="home_state" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="home_zip" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="home_phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="spouse_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="spouse_account_employer" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="spouse_account_typeofbusiness" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="spouse_account_occupation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="spouse_account_address" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="spouse_account_position" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="spouse_account_phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="is_shareholder_public_company" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="is_relationship" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isactive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isdeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="dt_created" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AgreementDetails" Member="AgreementDetails">
+    <Type Name="AgreementDetail">
+      <Column Name="AgreementDetailsID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AgreementID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SignatureLabel" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="SignatureType" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="SignatureDefaultValue" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="IsRequired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="AgreementDetail_UserAgrement" Member="UserAgrements" ThisKey="AgreementDetailsID" OtherKey="AgreementDetailsID" Type="UserAgrement" />
+      <Association Name="Agreement_AgreementDetail" Member="Agreement" ThisKey="AgreementID" OtherKey="AgreementID" Type="Agreement" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_account_type_lu" Member="tb_account_type_lus">
+    <Type Name="tb_account_type_lu">
+      <Column Name="account_type_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="account_type" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_address_type_lu" Member="tb_address_type_lus">
+    <Type Name="tb_address_type_lu">
+      <Column Name="address_type_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="address_type" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Association Name="tb_address_type_lu_tb_address" Member="tb_addresses" ThisKey="address_type_id" OtherKey="address_type_id" Type="tb_address" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_AdminUsers" Member="tb_AdminUsers">
+    <Type Name="tb_AdminUser">
+      <Column Name="admin_user_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="UserRole" Type="System.String" DbType="varchar(100)" CanBeNull="false" />
+      <Column Name="defaultStoreURI" Type="System.String" DbType="varchar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_affiliation" Member="tb_affiliations">
+    <Type Name="tb_affiliation">
+      <Column Name="account_affiliation_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="is_employed_security_industry" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_broker_dealer_security_dealer" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_investment_advisor" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_state_federal_regulator" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_FINRA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="entity_name" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="is_shareholder_public_company" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="company_name" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="is_senior_govt_nonus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="senior_govt_nonus_country_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_communication_choices" Member="tb_communication_choices">
+    <Type Name="tb_communication_choice">
+      <Column Name="account_communication_choice_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="is_all_communication" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_all_communication_except" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_all_communication_except_tax" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="communication_option" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="communication_email" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_employment_status_lu" Member="tb_employment_status_lus">
+    <Type Name="tb_employment_status_lu">
+      <Column Name="employment_status_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="employment_status" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Association Name="tb_employment_status_lu_tb_employementstatus" Member="tb_employementstatus" ThisKey="employment_status_id" OtherKey="employment_status_id" Type="tb_employementstatus" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_financials" Member="tb_financials">
+    <Type Name="tb_financial">
+      <Column Name="account_financial_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="annual_income" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="tax_rate" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="net_worth" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="liquid_net_worth" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="annual_expense" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="special_expense" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="special_expense_time" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_goals" Member="tb_goals">
+    <Type Name="tb_goal">
+      <Column Name="account_goal_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="investment_account_option" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="account_future" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="account_future_other" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="earliest_funding_time_frame" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_identification_type_lu" Member="tb_identification_type_lus">
+    <Type Name="tb_identification_type_lu">
+      <Column Name="identification_type_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="identification_status" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Association Name="tb_identification_type_lu_tb_patriot" Member="tb_patriots" ThisKey="identification_type_id" OtherKey="identification_type_id" Type="tb_patriot" />
+      <Association Name="tb_identification_type_lu_tb_security_information" Member="tb_security_informations" ThisKey="identification_type_id" OtherKey="identification_type_id" Type="tb_security_information" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_initial_lu" Member="tb_initial_lus">
+    <Type Name="tb_initial_lu">
+      <Column Name="initial_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="intial" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_managing_cash" Member="tb_managing_cashes">
+    <Type Name="tb_managing_cash">
+      <Column Name="account_managing_cash" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="is_sales_mail_check_to_address" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_sales_send_check_to_bank_account" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="sales_account_number" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="sales_routing_number" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="is_sales_sweep_into_money_market" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_sales_sweep_into_market_deposit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_sales_other" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="sales_other" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="is_dividend_mail_check_to_address1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_dividend_send_check_to_bank_account1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dividend_account_number1" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="dividend_routing_number1" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="is_dividend_sweep_into_money_market1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_dividend_sweep_into_market_deposit1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_dividend_other1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dividend_other1" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="sales_proceed" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="dividend_proceed" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="securities_proceed" Type="System.String" DbType="varchar(256)" CanBeNull="false" />
+      <Column Name="maintain_other_brokerage" Type="System.String" DbType="varchar(16)" CanBeNull="false" />
+      <Column Name="maintain_other_brokeerage_firms" Type="System.String" DbType="varchar(512)" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_margin_account" Member="tb_margin_accounts">
+    <Type Name="tb_margin_account">
+      <Column Name="account_margin_account_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="is_margin_loan_agreement" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_borrow_funds_account" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_martial_status_lu" Member="tb_martial_status_lus">
+    <Type Name="tb_martial_status_lu">
+      <Column Name="martial_status_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="martial_status" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Association Name="tb_martial_status_lu_tb_address" Member="tb_addresses" ThisKey="martial_status_id" OtherKey="martial_status_id" Type="tb_address" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_patriot" Member="tb_patriots">
+    <Type Name="tb_patriot">
+      <Column Name="patriot_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date_of_birth" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="identification_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="identitication_number" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="identification_expiration" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="identitifcation_place_of_issue" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="identification_issue_date" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="residence_country_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="is_coapplicant" Type="System.Boolean" DbType="BIT NOT NULL" CanBeNull="false" />
+      <Association Name="tb_identification_type_lu_tb_patriot" Member="tb_identification_type_lu" ThisKey="identification_type_id" OtherKey="identification_type_id" Type="tb_identification_type_lu" IsForeignKey="true" />
+      <Association Name="tb_country_tb_patriot" Member="tb_country" ThisKey="residence_country_id" OtherKey="country_id" Type="tb_country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_risk_tolerance" Member="tb_risk_tolerances">
+    <Type Name="tb_risk_tolerance">
+      <Column Name="account_risk_tolerance_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="account_risk_tolerance" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_security_information" Member="tb_security_informations">
+    <Type Name="tb_security_information">
+      <Column Name="account_security_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date_of_birth" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="tax_id" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="citizenship_country_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="identification_type_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="identification_number" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="identification_expiration" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="place_of_issue" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="issue_date" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="tax_country_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tb_identification_type_lu_tb_security_information" Member="tb_identification_type_lu" ThisKey="identification_type_id" OtherKey="identification_type_id" Type="tb_identification_type_lu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_state" Member="tb_states">
+    <Type Name="tb_state">
+      <Column Name="state_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="state" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="state_initial" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_suffix_lu" Member="tb_suffix_lus">
+    <Type Name="tb_suffix_lu">
+      <Column Name="suffix_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="suffix" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserAgrements" Member="UserAgrements">
+    <Type Name="UserAgrement">
+      <Column Name="UserAgreementID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AgreementID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="AgreementDetailsID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="SignatureValue" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="AgreementDetail_UserAgrement" Member="AgreementDetail" ThisKey="AgreementDetailsID" OtherKey="AgreementDetailsID" Type="AgreementDetail" IsForeignKey="true" />
+      <Association Name="Agreement_UserAgrement" Member="Agreement" ThisKey="AgreementID" OtherKey="AgreementID" Type="Agreement" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_settings" Member="tb_settings">
+    <Type Name="tb_setting">
+      <Column Name="setting_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[key]" Member="key" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="storeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Agreement" Member="Agreements">
+    <Type Name="Agreement">
+      <Column Name="AgreementID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="storeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AgreementName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="Agreement_AgreementDetail" Member="AgreementDetails" ThisKey="AgreementID" OtherKey="AgreementID" Type="AgreementDetail" />
+      <Association Name="Agreement_UserAgrement" Member="UserAgrements" ThisKey="AgreementID" OtherKey="AgreementID" Type="UserAgrement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_ContentManagement" Member="tb_ContentManagements">
+    <Type Name="tb_ContentManagement">
+      <Column Name="content_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="storeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="content_display_name" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="content_key" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="content_text" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.store_base" Member="store_bases">
+    <Type Name="store_base">
+      <Column Name="storeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="uri" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="address1" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="address2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="zipcode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="storeLogo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="storeLogoLink" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="storeDisplayName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="contactPhone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dateModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="createdby" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="modifiedBy" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Applications" Member="aspnet_Applications">
+    <Type Name="aspnet_Application">
+      <Column Name="ApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredApplicationName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="aspnet_Application_aspnet_Membership" Member="aspnet_Memberships" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Membership" />
+      <Association Name="aspnet_Application_aspnet_Path" Member="aspnet_Paths" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Path" />
+      <Association Name="aspnet_Application_aspnet_Role" Member="aspnet_Roles" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Role" />
+      <Association Name="aspnet_Application_aspnet_User" Member="aspnet_Users" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_WebEvent_Events" Member="aspnet_WebEvent_Events">
+    <Type Name="aspnet_WebEvent_Event">
+      <Column Name="EventId" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EventTimeUtc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EventTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EventType" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="EventSequence" Type="System.Decimal" DbType="Decimal(19,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EventOccurrence" Type="System.Decimal" DbType="Decimal(19,0) NOT NULL" CanBeNull="false" />
+      <Column Name="EventCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EventDetailCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="ApplicationPath" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ApplicationVirtualPath" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="MachineName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="RequestUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="ExceptionType" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Details" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Membership" Member="aspnet_Memberships">
+    <Type Name="aspnet_Membership">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordFormat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePIN" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="LoweredEmail" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordQuestion" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordAnswer" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastPasswordChangedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLockoutDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="aspnet_Application_aspnet_Membership" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+      <Association Name="aspnet_User_aspnet_Membership" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Paths" Member="aspnet_Paths">
+    <Type Name="aspnet_Path">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PathId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredPath" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationAllUser" Member="aspnet_PersonalizationAllUser" ThisKey="PathId" OtherKey="PathId" Type="aspnet_PersonalizationAllUser" Cardinality="One" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationPerUser" Member="aspnet_PersonalizationPerUsers" ThisKey="PathId" OtherKey="PathId" Type="aspnet_PersonalizationPerUser" />
+      <Association Name="aspnet_Application_aspnet_Path" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_PersonalizationAllUsers" Member="aspnet_PersonalizationAllUsers">
+    <Type Name="aspnet_PersonalizationAllUser">
+      <Column Name="PathId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PageSettings" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationAllUser" Member="aspnet_Path" ThisKey="PathId" OtherKey="PathId" Type="aspnet_Path" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_PersonalizationPerUser" Member="aspnet_PersonalizationPerUsers">
+    <Type Name="aspnet_PersonalizationPerUser">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PathId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PageSettings" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_Path_aspnet_PersonalizationPerUser" Member="aspnet_Path" ThisKey="PathId" OtherKey="PathId" Type="aspnet_Path" IsForeignKey="true" />
+      <Association Name="aspnet_User_aspnet_PersonalizationPerUser" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Profile" Member="aspnet_Profiles">
+    <Type Name="aspnet_Profile">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PropertyNames" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PropertyValuesString" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PropertyValuesBinary" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="aspnet_User_aspnet_Profile" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Roles" Member="aspnet_Roles">
+    <Type Name="aspnet_Role">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredRoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_UsersInRole" />
+      <Association Name="aspnet_Application_aspnet_Role" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_SchemaVersions" Member="aspnet_SchemaVersions">
+    <Type Name="aspnet_SchemaVersion">
+      <Column Name="Feature" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CompatibleSchemaVersion" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsCurrentVersion" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Users" Member="aspnet_Users">
+    <Type Name="aspnet_User">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="MobileAlias" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="storeId" Type="System.Int32" DbType="int" CanBeNull="true" />
+      <Association Name="aspnet_User_aspnet_Membership" Member="aspnet_Membership" ThisKey="UserId" OtherKey="UserId" Type="aspnet_Membership" Cardinality="One" />
+      <Association Name="aspnet_User_aspnet_PersonalizationPerUser" Member="aspnet_PersonalizationPerUsers" ThisKey="UserId" OtherKey="UserId" Type="aspnet_PersonalizationPerUser" />
+      <Association Name="aspnet_User_aspnet_Profile" Member="aspnet_Profile" ThisKey="UserId" OtherKey="UserId" Type="aspnet_Profile" Cardinality="One" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="aspnet_UsersInRole" />
+      <Association Name="aspnet_Application_aspnet_User" Member="aspnet_Application" ThisKey="ApplicationId" OtherKey="ApplicationId" Type="aspnet_Application" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_UsersInRoles" Member="aspnet_UsersInRoles">
+    <Type Name="aspnet_UsersInRole">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="aspnet_Role_aspnet_UsersInRole" Member="aspnet_Role" ThisKey="RoleId" OtherKey="RoleId" Type="aspnet_Role" IsForeignKey="true" />
+      <Association Name="aspnet_User_aspnet_UsersInRole" Member="aspnet_User" ThisKey="UserId" OtherKey="UserId" Type="aspnet_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmailLog" Member="EmailLogs">
+    <Type Name="EmailLog">
+      <Column Name="EmailLogID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StoreURI" Type="System.String" DbType="VarChar(64)" CanBeNull="true" />
+      <Column Name="FromName" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="FromEmail" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="ToName" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="ToEmail" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="CCEmail" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="BCCEmail" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="Body" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="isSent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="date_sent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="message" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.site_users" Member="site_users">
+    <Type Name="site_user">
+      <Column Name="site_user_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="auth_key" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="last_created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.newsletter_subscriber" Member="newsletter_subscribers">
+    <Type Name="newsletter_subscriber">
+      <Column Name="newsletter_subscriber_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="first_name" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ip_address" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="request_log" Type="System.String" DbType="varchar(1024)" CanBeNull="true" />
+      <Column Name="response_log" Type="System.String" DbType="varchar(1024)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.demo_requests" Member="demo_requests">
+    <Type Name="demo_request">
+      <Column Name="demo_request_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="first_name" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ip_address" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_account_bankreference" Member="tb_account_bankreferences">
+    <Type Name="tb_account_bankreference">
+      <Column Name="Reference_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BankName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateModified" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_netellertransaction" Member="tb_netellertransactions">
+    <Type Name="tb_netellertransaction">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TZAccountID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="NetellerAccId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Currency" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MerchantRefId" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="TransactionGroupId" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_neteller_fee" Member="tb_neteller_fees">
+    <Type Name="tb_neteller_fee">
+      <Column Name="FeeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TZAccId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="FeeAmount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FeeCurrency" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FeeName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FeeType" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_BlogVisitors" Member="tb_BlogVisitors">
+    <Type Name="tb_BlogVisitor">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BlogId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="VisitedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_blog" Member="tb_blogs">
+    <Type Name="tb_blog">
+      <Column Name="BlogId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Blogger" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Article" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="VideoUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Views" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_financial_investment" Member="tb_financial_investments">
+    <Type Name="tb_financial_investment">
+      <Column Name="account_financial_investment_experience_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="year_mutual_funds" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="number_mutual_funds" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="year_investment_stocks" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="number_investment_stocks" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="year_bonds" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="number_bonds" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="year_options" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="number_options" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="year_social_securities" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="number_social_securities" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="year_annuties" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="number_annuties" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="year_alternatives" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="number_alternatives" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="year_margins" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="number_margins" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="decision_making_experience" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="other_investment_type_1" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_firm_1" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_amount_1" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_type_2" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_type_3" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_firm_2" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_firm_3" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_amount_3" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="other_investment_amount_2" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="average_size_per_trade" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_address" Member="tb_addresses">
+    <Type Name="tb_address">
+      <Column Name="address_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="address_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="first_name" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="last_name" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="middle_name" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="suffix" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="address_1" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="address_2" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="state" Type="System.String" DbType="VarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="zipcode" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="is_address_last_one_year" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="martial_status_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="work_phone" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="home_phone" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="mobile_phone" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="num_dependents" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="email_address" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="photo_id_path" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="is_coapplicant" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="business_telephone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="contact_name" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Association Name="tb_address_tb_employementstatus" Member="tb_employementstatus" ThisKey="address_id" OtherKey="business_address_id" Type="tb_employementstatus" />
+      <Association Name="tb_address_type_lu_tb_address" Member="tb_address_type_lu" ThisKey="address_type_id" OtherKey="address_type_id" Type="tb_address_type_lu" IsForeignKey="true" />
+      <Association Name="tb_martial_status_lu_tb_address" Member="tb_martial_status_lu" ThisKey="martial_status_id" OtherKey="martial_status_id" Type="tb_martial_status_lu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_blogmeta" Member="tb_blogmetas">
+    <Type Name="tb_blogmeta">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BlogId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Keywords" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_institutional_signup" Member="tb_institutional_signups">
+    <Type Name="tb_institutional_signup">
+      <Column Name="institutional_sign_up_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="num_officers" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="account_name" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="investment_objective" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="is_officer_director" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="is_customer_broker" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="relationship" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="entity_type" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="funding_option_other" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_country" Member="tb_countries">
+    <Type Name="tb_country">
+      <Column Name="country_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="country_initial" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="country_code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tb_country_tb_patriot" Member="tb_patriots" ThisKey="country_id" OtherKey="residence_country_id" Type="tb_patriot" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_bank_ProfessionalLinks" Member="tb_bank_ProfessionalLinks">
+    <Type Name="tb_bank_ProfessionalLink">
+      <Column Name="ProfessionalLinksId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountId" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DateModified" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CountryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.account_signatures" Member="account_signatures">
+    <Type Name="account_signature">
+      <Column Name="account_signature_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="signature_01" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_02" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_03" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_04" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_05" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_06" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_07" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_08" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_09" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_10" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_11" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="signature_12" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="signature_coapplicant" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_affiliateusers" Member="tb_affiliateusers">
+    <Type Name="tb_affiliateuser">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VisitedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpiredOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="AffiliateType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Expired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.website_request_log" Member="website_request_logs">
+    <Type Name="website_request_log">
+      <Column Name="website_request_log_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="first_name" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="last_name" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="website" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="software" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="subject" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="num_of_traders" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="num_of_trades" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="comments" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="host_address" Type="System.String" DbType="VarChar(96)" CanBeNull="true" />
+      <Column Name="request_type" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="country_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Reminder1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Reminder2" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsConfirm" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="IsDemoAcc" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDemoShared" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="affiliate_type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.emailTemplates" Member="emailTemplates">
+    <Type Name="emailTemplate">
+      <Column Name="emailTemplateId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="storeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fromName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="fromEmail" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ccEmail" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="bccEmail" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="isHtml" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="templateName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="emailSubject" Type="System.String" DbType="VarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="emailBody" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="affiliate_type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_PostType" Member="tb_PostTypes">
+    <Type Name="tb_PostType">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PostType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_RestrictDomainList" Member="tb_RestrictDomainLists">
+    <Type Name="tb_RestrictDomainList">
+      <Column Name="RestrictedDomain" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DomainId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_ExchangeType" Member="tb_ExchangeTypes">
+    <Type Name="tb_ExchangeType">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExchangeName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_ProNonProAgreement" Member="tb_ProNonProAgreements">
+    <Type Name="tb_ProNonProAgreement">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Q1" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q3" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q4" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q5" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q6" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q7" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q8" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q9" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q10" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Q11" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Initials" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_AddOn" Member="tb_AddOns">
+    <Type Name="tb_AddOn">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SoftwareType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddOnId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExchangeIds" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FreeAfter" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_employementstatus" Member="tb_employementstatus">
+    <Type Name="tb_employementstatus">
+      <Column Name="employment_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="employment_status_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="business_address_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="employement_status_other" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="job_title" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="occupation" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="employer" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="years_with_employment" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="is_coapplicant" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tb_address_tb_employementstatus" Member="tb_address" ThisKey="business_address_id" OtherKey="address_id" Type="tb_address" IsForeignKey="true" />
+      <Association Name="tb_employment_status_lu_tb_employementstatus" Member="tb_employment_status_lu" ThisKey="employment_status_id" OtherKey="employment_status_id" Type="tb_employment_status_lu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_funding" Member="tb_fundings">
+    <Type Name="tb_funding">
+      <Column Name="account_funding_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="funding_option" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="funding_option_other" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="funding_sourcefunds_option" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="more_info" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_HomeGraphic" Member="tb_HomeGraphics">
+    <Type Name="tb_HomeGraphic">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GraphicName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Image1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Image1_Button" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ButtonUrl1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Button1Colour" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active_Image1" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Image2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Image2_Button" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ButtonUrl2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Button2Colour" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active_Image2" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Image3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Image3_Button" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ButtonUrl3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Button3Colour" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active_Image3" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Image4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Image4_Button" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ButtonUrl4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Button4Colour" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active_Image4" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Image5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Image5_Button" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ButtonUrl5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Button5Colour" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active_Image5" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Image6" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Image6_Button" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ButtonUrl6" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Button6Colour" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active_Image6" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SliderSpeed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ActiveCurrentGraphic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TimeInterval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_Compliance" Member="tb_Compliances">
+    <Type Name="tb_Compliance">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdminId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FileNames" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FundRequest" Member="FundRequests">
+    <Type Name="FundRequest">
+      <Column Name="requestId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customerId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="accountNumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="deliveryMethod" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="frequency" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="mode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="dateStatus" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="receipientbank" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="abanumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="swiftnumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bankname" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bankcity" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="otherinfo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="startDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsFurtherCredit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FurtherCreditAccountNumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FurtherCreditAccountName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FurtherCreditAddress" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BeneficiaryBankSortCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BeneficiaryBankAddress" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IntermediaryBankSWF" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IntermediaryBankSortCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IntermediaryBankAddress" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_EasyOFACHistory" Member="tb_EasyOFACHistories">
+    <Type Name="tb_EasyOFACHistory">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountNumber" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CustomerDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CustomerStatus" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CustomerKyc" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="MoveToUnsafe" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_PostNews" Member="tb_PostNews">
+    <Type Name="tb_PostNew">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PostType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ShortDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="VideoUrl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_AffiliateType" Member="tb_AffiliateTypes">
+    <Type Name="tb_AffiliateType">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AffiliateType" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_ClientAddonHistory" Member="tb_ClientAddonHistories">
+    <Type Name="tb_ClientAddonHistory">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AddOn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FreeAfter" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProratingFee" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NormalFee" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProratingShare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NormalShare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlatformType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TakenOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CancelledOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_ProratingFee" Member="tb_ProratingFees">
+    <Type Name="tb_ProratingFee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZeroProFee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ZeroWebFee" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ZeroProShare" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="WebProShare" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SoftwareType" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_accounts" Member="tb_accounts">
+    <Type Name="tb_account">
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customer_id" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="storeURI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="account_id_service" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="email_address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="account_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="date_modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="last_logged_in" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="tax_id" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="turbo_tick_log" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="identification_file" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="additional_file" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="account_guid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="trading_type" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="citizenship_country_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="is_agreeement_signed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="E_notification" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Completed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Fund_Email" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Affiliate_Type" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="StopIncompleteReminder" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Add_Funds" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AccountApproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ApprovalDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_PlateformAccounts" Member="tb_PlateformAccounts">
+    <Type Name="tb_PlateformAccount">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoftwareType" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ActivatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeactivatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ExpiredOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_sharedresponse" Member="tb_sharedresponses">
+    <Type Name="tb_sharedresponse">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sharedonfb" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="sharedongoogleplus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="sharedontwitter" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="accounttype" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="shareddate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="freecredits" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="creditreversal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="creditreversaldate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="credits" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_payamount" Member="tb_payamounts">
+    <Type Name="tb_payamount">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="customer_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="payment_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_savetoken" Member="tb_savetokens">
+    <Type Name="tb_savetoken">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="access_token" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="bank_token" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Account_Id_Plaid" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Customer_Id" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_SendNotification" Method="sp_SendNotification">
+    <ElementType Name="sp_SendNotificationResult">
+      <Column Name="email_address" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="date_created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DiffDate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="account_guid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="fullname" Type="System.String" DbType="VarChar(65)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_UpdateNotification" Method="sp_UpdateNotification">
+    <Parameter Name="AccountIds" Parameter="accountIds" Type="System.String" DbType="VarChar(1000)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AccountSignature" Method="AccountSignature" IsComposable="true">
+    <Parameter Name="input" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PhotoPath" Method="PhotoPath" IsComposable="true">
+    <Parameter Name="input" Type="System.Int32" DbType="Int" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.SplitString" Method="SplitString" IsComposable="true">
+    <Parameter Name="Input" Parameter="input" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Character" Parameter="character" Type="System.Char" DbType="Char(1)" />
+    <ElementType Name="SplitStringResult">
+      <Column Name="Item" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.StepNo" Method="StepNo" IsComposable="true">
+    <Parameter Name="AccountId" Parameter="accountId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.sp_getAllUsers" Method="sp_getAllUsers">
+    <Parameter Name="firstname" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="lastname" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="emailaddress" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="accountnumber" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="accounttype" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_getAllUsersResult">
+      <Column Name="account_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FirstIn" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AccountType" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="TradingType" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="account_type_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="country" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentSigned" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Step" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Id" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressProof" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AdditionalFile" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sharedonfb" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="sharedontwitter" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="freecredits" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="creditreversal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Fund_Email" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

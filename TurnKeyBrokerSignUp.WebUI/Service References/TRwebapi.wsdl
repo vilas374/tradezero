@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://www.tradereporting.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://www.tradereporting.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.tradereporting.com/">
+      <s:element name="TRLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRLoginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRAccountExist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subaccount" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRAccountExistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TRAccountExistResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TROpenAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subaccount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acctname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addr1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addr2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addr3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TROpenAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TROpenAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TROpenAccountAffiliate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subaccount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="acctname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addr1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addr2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="addr3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="affiliatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TROpenAccountAffiliateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TROpenAccountAffiliateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRAddAccountAffiliate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subaccount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="affiliatename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRAddAccountAffiliateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRAddAccountAffiliateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRGameList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRGameListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRGameListResult" type="tns:ArrayOfAffiliate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAffiliate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Affiliate" type="tns:Affiliate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Affiliate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AffiliateID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Note" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TRGameListAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="affid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRGameListAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRGameListAccountResult" type="tns:ArrayOfAffiliateAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAffiliateAccount">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AffiliateAccount" type="tns:AffiliateAccount" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AffiliateAccount">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Account" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TRGameAddAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="affid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sacct" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRGameAddAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRGameAddAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRGameDeleteAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="affid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sacct" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRGameDeleteAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRGameDeleteAccountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRCalculateCommission">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subaccount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="symbol" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="qty" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="price" type="s:float" />
+            <s:element minOccurs="0" maxOccurs="1" name="dest" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="liquidityflag" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="originalcommission" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRCalculateCommissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TRCalculateCommissionResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRCashJournal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sacct" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="edate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="curr1" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="stype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="snote" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRCashJournalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRCashJournalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRChangePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stoken" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subaccount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="loginid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TRChangePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRChangePasswordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TRLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:TRLogin" />
+  </wsdl:message>
+  <wsdl:message name="TRLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:TRLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRAccountExistSoapIn">
+    <wsdl:part name="parameters" element="tns:TRAccountExist" />
+  </wsdl:message>
+  <wsdl:message name="TRAccountExistSoapOut">
+    <wsdl:part name="parameters" element="tns:TRAccountExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="TROpenAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:TROpenAccount" />
+  </wsdl:message>
+  <wsdl:message name="TROpenAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:TROpenAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="TROpenAccountAffiliateSoapIn">
+    <wsdl:part name="parameters" element="tns:TROpenAccountAffiliate" />
+  </wsdl:message>
+  <wsdl:message name="TROpenAccountAffiliateSoapOut">
+    <wsdl:part name="parameters" element="tns:TROpenAccountAffiliateResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRAddAccountAffiliateSoapIn">
+    <wsdl:part name="parameters" element="tns:TRAddAccountAffiliate" />
+  </wsdl:message>
+  <wsdl:message name="TRAddAccountAffiliateSoapOut">
+    <wsdl:part name="parameters" element="tns:TRAddAccountAffiliateResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRGameListSoapIn">
+    <wsdl:part name="parameters" element="tns:TRGameList" />
+  </wsdl:message>
+  <wsdl:message name="TRGameListSoapOut">
+    <wsdl:part name="parameters" element="tns:TRGameListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRGameListAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:TRGameListAccount" />
+  </wsdl:message>
+  <wsdl:message name="TRGameListAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:TRGameListAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRGameAddAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:TRGameAddAccount" />
+  </wsdl:message>
+  <wsdl:message name="TRGameAddAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:TRGameAddAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRGameDeleteAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:TRGameDeleteAccount" />
+  </wsdl:message>
+  <wsdl:message name="TRGameDeleteAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:TRGameDeleteAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRCalculateCommissionSoapIn">
+    <wsdl:part name="parameters" element="tns:TRCalculateCommission" />
+  </wsdl:message>
+  <wsdl:message name="TRCalculateCommissionSoapOut">
+    <wsdl:part name="parameters" element="tns:TRCalculateCommissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRCashJournalSoapIn">
+    <wsdl:part name="parameters" element="tns:TRCashJournal" />
+  </wsdl:message>
+  <wsdl:message name="TRCashJournalSoapOut">
+    <wsdl:part name="parameters" element="tns:TRCashJournalResponse" />
+  </wsdl:message>
+  <wsdl:message name="TRChangePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:TRChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="TRChangePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:TRChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TRServiceSoap">
+    <wsdl:operation name="TRLogin">
+      <wsdl:input message="tns:TRLoginSoapIn" />
+      <wsdl:output message="tns:TRLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRAccountExist">
+      <wsdl:input message="tns:TRAccountExistSoapIn" />
+      <wsdl:output message="tns:TRAccountExistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TROpenAccount">
+      <wsdl:input message="tns:TROpenAccountSoapIn" />
+      <wsdl:output message="tns:TROpenAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TROpenAccountAffiliate">
+      <wsdl:input message="tns:TROpenAccountAffiliateSoapIn" />
+      <wsdl:output message="tns:TROpenAccountAffiliateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRAddAccountAffiliate">
+      <wsdl:input message="tns:TRAddAccountAffiliateSoapIn" />
+      <wsdl:output message="tns:TRAddAccountAffiliateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRGameList">
+      <wsdl:input message="tns:TRGameListSoapIn" />
+      <wsdl:output message="tns:TRGameListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRGameListAccount">
+      <wsdl:input message="tns:TRGameListAccountSoapIn" />
+      <wsdl:output message="tns:TRGameListAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRGameAddAccount">
+      <wsdl:input message="tns:TRGameAddAccountSoapIn" />
+      <wsdl:output message="tns:TRGameAddAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRGameDeleteAccount">
+      <wsdl:input message="tns:TRGameDeleteAccountSoapIn" />
+      <wsdl:output message="tns:TRGameDeleteAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRCalculateCommission">
+      <wsdl:input message="tns:TRCalculateCommissionSoapIn" />
+      <wsdl:output message="tns:TRCalculateCommissionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRCashJournal">
+      <wsdl:input message="tns:TRCashJournalSoapIn" />
+      <wsdl:output message="tns:TRCashJournalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TRChangePassword">
+      <wsdl:input message="tns:TRChangePasswordSoapIn" />
+      <wsdl:output message="tns:TRChangePasswordSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TRServiceSoap" type="tns:TRServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TRLogin">
+      <soap:operation soapAction="https://www.tradereporting.com/TRLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRAccountExist">
+      <soap:operation soapAction="https://www.tradereporting.com/TRAccountExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TROpenAccount">
+      <soap:operation soapAction="https://www.tradereporting.com/TROpenAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TROpenAccountAffiliate">
+      <soap:operation soapAction="https://www.tradereporting.com/TROpenAccountAffiliate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRAddAccountAffiliate">
+      <soap:operation soapAction="https://www.tradereporting.com/TRAddAccountAffiliate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameList">
+      <soap:operation soapAction="https://www.tradereporting.com/TRGameList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameListAccount">
+      <soap:operation soapAction="https://www.tradereporting.com/TRGameListAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameAddAccount">
+      <soap:operation soapAction="https://www.tradereporting.com/TRGameAddAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameDeleteAccount">
+      <soap:operation soapAction="https://www.tradereporting.com/TRGameDeleteAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRCalculateCommission">
+      <soap:operation soapAction="https://www.tradereporting.com/TRCalculateCommission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRCashJournal">
+      <soap:operation soapAction="https://www.tradereporting.com/TRCashJournal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRChangePassword">
+      <soap:operation soapAction="https://www.tradereporting.com/TRChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TRServiceSoap12" type="tns:TRServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TRLogin">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRAccountExist">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRAccountExist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TROpenAccount">
+      <soap12:operation soapAction="https://www.tradereporting.com/TROpenAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TROpenAccountAffiliate">
+      <soap12:operation soapAction="https://www.tradereporting.com/TROpenAccountAffiliate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRAddAccountAffiliate">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRAddAccountAffiliate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameList">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRGameList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameListAccount">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRGameListAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameAddAccount">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRGameAddAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRGameDeleteAccount">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRGameDeleteAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRCalculateCommission">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRCalculateCommission" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRCashJournal">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRCashJournal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TRChangePassword">
+      <soap12:operation soapAction="https://www.tradereporting.com/TRChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TRService">
+    <wsdl:port name="TRServiceSoap" binding="tns:TRServiceSoap">
+      <soap:address location="http://www.tradereporting.com/TRwebapi.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TRServiceSoap12" binding="tns:TRServiceSoap12">
+      <soap12:address location="http://www.tradereporting.com/TRwebapi.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
